@@ -34,8 +34,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class Controller {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+public class Controller {
+    private static final Logger logger = LogManager.getLogger(Controller.class);
     private String alreadyspoken = "";
     private static final String VOICENAME_kevin = "kevin16";
 
@@ -62,6 +65,7 @@ public class Controller {
 
     @FXML
     public void initialize() {
+        logger.info("Initialization in Controller.");
         this.imageView = new ImageView();
         System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
         listenForUSBConnection();
@@ -77,6 +81,7 @@ public class Controller {
                     // Check for connection every second
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
+                    logger.error("USBConnectionError");
                     Thread.currentThread().interrupt();
                 }
             }
