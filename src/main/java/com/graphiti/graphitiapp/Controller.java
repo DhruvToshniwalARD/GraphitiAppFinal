@@ -116,7 +116,7 @@ public class Controller {
                 // Check if Graphiti is connected and send image
                 if (driver.isConnected()) {
                     try {
-                        //driver.setOrClearDisplay(false);
+                        // driver.setOrClearDisplay(false);
                         driver.sendImage(this.selectedFile);
                     } catch (IOException e) {
                         System.out.println("An error occurred while sending the command: " + e.getMessage());
@@ -446,7 +446,7 @@ public class Controller {
                         break;
                     }
                 }
-                feedbackLabel.setText(objectName);
+                //feedbackLabel.setText(objectName);
             });
 
             canvas.setOnMouseExited(event -> feedbackLabel.setText(""));

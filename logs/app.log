@@ -1,0 +1,6 @@
+15:44:27.004 [JavaFX Application Thread] INFO  com.graphiti.graphitiapp.Controller - Main application running.
+15:44:27.183 [JavaFX Application Thread] INFO  com.graphiti.graphitiapp.Controller - Initialization in Controller.
+15:46:34.814 [pool-3-thread-1] ERROR com.graphiti.graphitiapp.Controller - USBConnectionError
+12:04:48.377 [JavaFX Application Thread] INFO  com.graphiti.graphitiapp.Controller - Main application running.
+12:04:48.796 [JavaFX Application Thread] INFO  com.graphiti.graphitiapp.Controller - Initialization in Controller.
+12:04:51.669 [pool-3-thread-1] ERROR com.graphiti.graphitiapp.Controller - USBConnectionError
